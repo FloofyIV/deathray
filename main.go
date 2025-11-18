@@ -130,6 +130,27 @@ func main() {
 				toggle = true
 				fmt.Printf("on \r")
 			case 0:
+				time.Sleep(10 * time.Millisecond)
+				keyboard.KeyPress(uinput.Key1)
+				time.Sleep(17 * time.Millisecond)
+				keyboard.KeyPress(uinput.KeyR)
+				time.Sleep(6 * time.Millisecond)
+				keyboard.KeyPress(uinput.Key2)
+				time.Sleep(17 * time.Millisecond)
+				keyboard.KeyPress(uinput.KeyR)
+				time.Sleep(6 * time.Millisecond)
+				keyboard.KeyPress(uinput.Key3)
+				time.Sleep(17 * time.Millisecond)
+				keyboard.KeyPress(uinput.KeyR)
+				time.Sleep(6 * time.Millisecond)
+				keyboard.KeyPress(uinput.Key4)
+				time.Sleep(17 * time.Millisecond)
+				keyboard.KeyPress(uinput.KeyR)
+				time.Sleep(6 * time.Millisecond)
+				keyboard.KeyPress(uinput.Key5)
+				time.Sleep(17 * time.Millisecond)
+				keyboard.KeyPress(uinput.KeyR)
+				time.Sleep(6 * time.Millisecond)
 				toggle = false
 				fmt.Printf("off\r")
 			}
