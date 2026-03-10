@@ -53,7 +53,7 @@ func main() {
 		return
 	}
 
-	device, err := findDevice("Logitech USB Receiver")
+	device, err := findDevice("Logitech G502 X PLUS")
 	if err != nil {
 		fmt.Println("Error finding device:", err)
 		return
@@ -84,25 +84,17 @@ func main() {
 		for {
 			if toggle == true {
 				keyboard.KeyPress(uinput.Key1)
-				time.Sleep(17 * time.Millisecond)
+				time.Sleep(14 * time.Millisecond)
 				mice.LeftClick()
-				time.Sleep(6 * time.Millisecond)
+				time.Sleep(10 * time.Millisecond)
 				keyboard.KeyPress(uinput.Key2)
-				time.Sleep(17 * time.Millisecond)
+				time.Sleep(14 * time.Millisecond)
 				mice.LeftClick()
-				time.Sleep(6 * time.Millisecond)
+				time.Sleep(10 * time.Millisecond)
 				keyboard.KeyPress(uinput.Key3)
-				time.Sleep(17 * time.Millisecond)
+				time.Sleep(14 * time.Millisecond)
 				mice.LeftClick()
-				time.Sleep(6 * time.Millisecond)
-				keyboard.KeyPress(uinput.Key4)
-				time.Sleep(17 * time.Millisecond)
-				mice.LeftClick()
-				time.Sleep(6 * time.Millisecond)
-				keyboard.KeyPress(uinput.Key5)
-				time.Sleep(17 * time.Millisecond)
-				mice.LeftClick()
-				time.Sleep(6 * time.Millisecond)
+				time.Sleep(10 * time.Millisecond)
 			} else {
 				time.Sleep(10 * time.Millisecond)
 			}
@@ -130,27 +122,6 @@ func main() {
 				toggle = true
 				fmt.Printf("on \r")
 			case 0:
-				time.Sleep(10 * time.Millisecond)
-				keyboard.KeyPress(uinput.Key1)
-				time.Sleep(17 * time.Millisecond)
-				keyboard.KeyPress(uinput.KeyR)
-				time.Sleep(6 * time.Millisecond)
-				keyboard.KeyPress(uinput.Key2)
-				time.Sleep(17 * time.Millisecond)
-				keyboard.KeyPress(uinput.KeyR)
-				time.Sleep(6 * time.Millisecond)
-				keyboard.KeyPress(uinput.Key3)
-				time.Sleep(17 * time.Millisecond)
-				keyboard.KeyPress(uinput.KeyR)
-				time.Sleep(6 * time.Millisecond)
-				keyboard.KeyPress(uinput.Key4)
-				time.Sleep(17 * time.Millisecond)
-				keyboard.KeyPress(uinput.KeyR)
-				time.Sleep(6 * time.Millisecond)
-				keyboard.KeyPress(uinput.Key5)
-				time.Sleep(17 * time.Millisecond)
-				keyboard.KeyPress(uinput.KeyR)
-				time.Sleep(6 * time.Millisecond)
 				toggle = false
 				fmt.Printf("off\r")
 			}
